@@ -1,0 +1,284 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_portrait_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.periculum.ims.MaterialManagementFragment">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/add_material_form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Material Management"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/box" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Material Code *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:id="@+id/mcode" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Description *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:id="@+id/description" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Material Deno *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:focusable="false"
+                            android:ems="10"
+                            android:background="@drawable/text_box_background"
+                            android:id="@+id/materialdeno" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Prefered Loc *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:id="@+id/prefloc" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Bay Info *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:id="@+id/bayinfo"
+                            android:inputType="text"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Bin Info *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:id="@+id/bininfo"
+                            android:inputType="text"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:id="@+id/add_material_button"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/stock_receive" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="ADD MATERIAL"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+                        <Button
+                            android:id="@+id/reset_button"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button"
+                            android:text="RESET"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

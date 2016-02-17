@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_portrait_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.periculum.ims.MpinCreate">
+
+
+    <ScrollView
+        android:id="@+id/auth_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/auth_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Employee Information"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/profileimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:text="Emp Id "
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/empid"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text="7049"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:text="Emp Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/empname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text="Roshan Kumar"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:text="Designation "
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/designation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text="Developer"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:text="Mobile No "
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:text="9555167143"
+                        android:textColor="@android:color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center_vertical"
+                        android:text="MPIN"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:background="@drawable/text_box_background">
+
+                        <EditText
+                            android:id="@+id/mpin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="MPIN"
+                            android:inputType="numberPassword"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center_vertical"
+                        android:text="Confirm MPIN"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:background="@drawable/text_box_background">
+
+                        <EditText
+                            android:id="@+id/cnfrmmpin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="MPIN"
+                            android:inputType="numberPassword"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/mpinbutton"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/button"
+                        android:text="submit"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

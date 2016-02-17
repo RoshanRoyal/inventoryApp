@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_portrait_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.periculum.ims.DashboardFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/auth_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/auth_form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Employee Information"
+                        android:textColor="@android:color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="25dp">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileimg"
+                          />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:text="Emp Id "
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empid"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:gravity="left"
+                            android:text="7049"
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:text="Emp Name"
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/empname"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:gravity="left"
+                            android:text="Roshan Kumar"
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:text="Designation "
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/designation"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:gravity="left"
+                            android:text="Developer"
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:text="Mobile No "
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mobile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:gravity="left"
+                            android:text="9555167143"
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

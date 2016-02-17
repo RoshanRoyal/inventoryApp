@@ -1,0 +1,494 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_portrait_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.periculum.ims.ReceiptsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/stock_rcv_form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Receipts"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Against Requistion No : "
+                        android:textColor="#B4B3B1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/requistionNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="H11908"
+                        android:textColor="#F7FAC3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Material "
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/material"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:gravity="center"
+                            android:text="HS27105280-7|OIL COOLANT"
+                            android:textColor="#F7FAC3"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Qty Issued *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/qtyissued"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:ems="10"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Qty received *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/qtyreceived"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Qty accepted *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/qtyaccepted"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Pack Type *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/packtype"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:ems="10"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="44"
+                            android:text="Smallest Issueable Qty *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/s_issue_qty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Batch No. *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/batchno"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Storage Loc. *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/stock_loc"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Remarks *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/remarks"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Endorsement *"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/endorsement"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Mismatch Details (if any)"
+                            android:textColor="#B4B3B1"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Mismatch Qty"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/mismatched_qty"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Mismatch Type "
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/mismatched_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:ems="10"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Mismatch Remarks"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/mismatched_remarks"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:id="@+id/rcv_stock_button"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="56"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rotationY="180"
+                                android:src="@drawable/stock_receive" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="RECEIVE"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <Button
+                            android:id="@+id/back_button"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_weight="56"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button"
+                            android:text="BACK"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

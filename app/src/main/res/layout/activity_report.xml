@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_portrait_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.periculum.ims.Report.StockReportActivity">
+
+
+    <LinearLayout
+        android:id="@+id/review_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/review_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:weightSum="100">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="Stock Report"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/reportlogo" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#beb7cc"
+                android:gravity="center"
+                android:padding="5dp"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="M Code."
+                    android:textColor="@android:color/white" />
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:text="M Name"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center"
+                    android:text="Srl"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center"
+                    android:text="Qty"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="No Stock Record Found."
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,443 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_portrait_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.periculum.ims.MaterialManagementFragment">
+
+
+    <LinearLayout
+        android:id="@+id/outright_issue_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="OutRight Issue"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/box" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:gravity="center_vertical"
+                            android:text="Select Site *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/siteselect"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:ems="10"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Material Code *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/mcode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="46"
+                            android:background="@drawable/text_box_background" />
+
+                        <ImageView
+                            android:id="@+id/search_material"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:background="@drawable/search_material" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:gravity="center_vertical"
+                            android:text="Directive Type *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/directive_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:ems="10"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Directive Ref. *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/directive_ref"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Directive Date *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/directive_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background"
+                            android:ems="10"
+                            android:focusable="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Issued To *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/issued_to"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Remark Checking *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/remark_checking"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="44"
+                            android:text="Endorsement Remarks *"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/endorsement_remark"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="56"
+                            android:background="@drawable/text_box_background" />
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5">
+
+                        <HorizontalScrollView
+                            android:id="@+id/hscrll1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayout1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TableLayout
+                                    android:id="@+id/table_main"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"></TableLayout>
+                            </RelativeLayout>
+                        </HorizontalScrollView>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/clear"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight=".9"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/clearbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="Clear"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/addstockissuetolist"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1.1"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:text="Add Item To List"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight=".9"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/inlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/textview_circle"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/issue_stock_button"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:clickable="false"
+                            android:layout_weight="1.1"
+                            android:background="@drawable/button"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/stock_issue" />
+
+                            <TextView
+                                android:id="@+id/issuematerialbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="Issue Material"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.periculum.ims.DataSyncFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+
+
+                <Button
+                    android:id="@+id/sync_sites"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Sync Sites"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+                <Button
+                    android:id="@+id/sync_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Sync Materials"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+                <Button
+                    android:id="@+id/sync_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Sync Stock"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/sync_stock_rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Sync Stock Receive"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/sync_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Sync Notification"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

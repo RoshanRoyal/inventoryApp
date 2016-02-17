@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/add_material"
+            android:icon="@drawable/add_material"
+            android:title="Add Material" />
+        <item
+            android:id="@+id/data_sync"
+            android:icon="@drawable/data_sync"
+            android:title="Data Sync" />
+
+        <item
+            android:id="@+id/review"
+            android:icon="@drawable/review"
+            android:title="Review" />
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/reports"
+            android:title="Reports" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@android:drawable/stat_notify_more"
+            android:title="Notification" />
+    </group>
+
+    <item android:title="Stock">
+        <menu>
+            <item
+                android:id="@+id/stock_issue"
+                android:icon="@drawable/stock_issue"
+                android:title="Outright Issue" />
+            <item
+                android:id="@+id/stock_receive"
+                android:icon="@drawable/stock_receive"
+
+                android:title="Stock Receive" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.periculum.ims">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileWithAuth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MpinCreate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MpinLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReceiptsActivity"
+            android:parentActivityName=".Dashboard"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.periculum.ims.Dashboard" />
+        </activity>
+        <activity
+            android:name=".Report.ReportSelect"
+            android:parentActivityName=".Dashboard">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.periculum.ims.Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".Report.StockReportActivity"
+            android:parentActivityName=".Report.ReportSelect"
+            android:screenOrientation="landscape">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Report.ReportSelect" />
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="IMS"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Reviews"
+            android:parentActivityName=".Dashboard">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.periculum.ims.Dashboard" />
+        </activity>
+
+        <!-- Register MyService -->
+        <service
+            android:name=".Services.SyncService"
+            android:enabled="true" />
+        <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".Broadcast.SyncStatusBR"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Outright_issue"
+            android:parentActivityName=".Dashboard">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.periculum.ims.Dashboard" />
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:parentActivityName=".Dashboard">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.periculum.ims.Dashboard" />
+
+        </activity>
+    </application>
+
+</manifest>

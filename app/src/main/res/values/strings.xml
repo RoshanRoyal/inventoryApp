@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">IMS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+
+    <string name="action_sign_in">    LOGIN    </string>
+    <string name="error_invalid_empid">Invalid EmpId. Try Again!!!</string>
+    <string name="error_invalid_password">Invalid Password. Try Again!!!</string>
+    <string name="error_invalid_mobile">Invalid mobile. Try Again!!!</string>
+    <string name="error_field_required">Please Enter This Field!!!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgetpasstext"> <u> CLICK HERE </u> </string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string-array name="receipt_MismatchType">
+        <item>Damage</item>
+        <item>Short Supply</item>
+    </string-array>
+    <string-array name="material_Denomination">
+        <item>Cubic Centimetre</item>
+        <item>Centimetre</item>
+         <item>Cubic Feet</item>
+        <item>Cubic Metres</item>
+        <item>Dozen</item>
+        <item>Fathom</item>
+        <item>Feet</item>
+        <item>Gallon</item>
+        <item>Gram</item>
+        <item>Gross</item>
+        <item>Kilogram</item>
+        <item>Pound</item>
+        <item>Litre</item>
+        <item>Metre</item>
+        <item>Milligram</item>
+        <item>Millilitre</item>
+        <item>Number</item>
+        <item>Pair</item>
+        <item>Quire</item>
+        <item>Quintal</item>
+        <item>Ream</item>
+        <item>Square Feet</item>
+        <item>Square Metres</item>
+        <item>Tonne Metric (1000 kg)</item>
+        <item>yard</item>
+    </string-array>
+    <string-array name="pack_Type">
+        <item>Bag Gunny</item>
+        <item>Box Metal</item>
+        <item>Box Plastic</item>
+        <item>Bottle</item>
+        <item>Box Wooden</item>
+        <item>Box CardBoard</item>
+        <item>Bag Plastic</item>
+        <item>Bag Paper</item>
+        <item>Can</item>
+        <item>Crate Plastic</item>
+        <item>Crate Wooden</item>
+        <item>Can Jerry</item>
+        <item>Cylinder</item>
+        <item>Drum</item>
+        <item>Jar Stone</item>
+        <item>Keg</item>
+        <item>Not Applicable</item>
+        <item>Packet</item>
+        <item>Tin</item>
+        <item>Tube</item>
+    </string-array>
+    <string-array name="directive_Type">
+        <item>Hired Machinery/Vehcile</item>
+        <item>Own Machinery/Vehicle</item>
+        <item>Returnable</item>
+        <item>Routine</item>
+    </string-array>
+</resources>
